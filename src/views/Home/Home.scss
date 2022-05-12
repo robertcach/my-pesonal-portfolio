@@ -1,0 +1,36 @@
+@import '/src/assets/stylesheets/general_mixins.scss';
+@import '/src/assets/stylesheets/variables.scss';
+
+
+.header {
+  margin-top: 50px
+}
+
+.about {
+  @include flex(flex, row, wrap, center, flex-start);
+  padding: 10rem 0;
+
+  &__left {
+    width: 50%;
+  }
+
+  &__right {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+
+.portfolio {
+  background-color: $secondary-color;
+  padding: 10rem 0;
+
+  &__title {
+    color: $main-color
+  }
+
+  &__intro {
+    max-width: 50ch;
+    color: $white-color
+  }
+}

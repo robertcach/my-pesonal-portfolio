@@ -1,0 +1,90 @@
+@import './variables.scss';
+
+
+/* MIXINS GENERAL */
+@mixin reset-p-m {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+
+@mixin flex($dis, $direction, $wrap, $justify, $align) {
+  display: $dis;
+  flex-flow: $direction $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+/* MIXIN BTNS */
+@mixin btn($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+  border: solid 2px $bg-color;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@mixin btn-border($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+  border: solid 2px $color;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer
+}
+
+
+/* GENERAL STYLES */
+* {
+  @include reset-p-m();
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: $secondary-font;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+/* FONTS */
+h1, h2, h3, h4 {
+  font-family: $main-font;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.8rem;
+}

@@ -1,0 +1,18 @@
+@import '/src/assets/stylesheets/general_mixins.scss';
+@import '/src/assets/stylesheets/variables.scss';
+
+.navbar {
+  @include flex(flex, row, wrap, space-between, center,);
+  background-color: $main-color;
+  width: 100%;
+  padding: 0 15rem;
+  position: absolute;
+  top: 0;
+
+  &__link {
+    color: $secondary-color;
+    text-decoration: none;
+    padding: 0 2rem;
+    font-size: 1.6rem;
+  }
+}
