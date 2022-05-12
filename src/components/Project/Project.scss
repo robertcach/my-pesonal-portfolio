@@ -1,0 +1,13 @@
+@import '/src/assets/stylesheets/general_mixins.scss';
+@import '/src/assets/stylesheets/variables.scss';
+
+
+.project {
+  color: $white-color;
+  width: 47%;
+  margin: 5% 1.5%;
+
+  &__info {
+    margin-bottom: 2rem;
+  }
+}

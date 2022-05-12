@@ -1,3 +1,4 @@
+import Project from '../../components/Project/Project';
 import './Home.scss'
 
 const Home = () => {
@@ -21,8 +22,47 @@ const Home = () => {
         <div className="wrapper">
           <h2 className="portfolio__title">Portfolio</h2>
           <p className="portfolio__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus, tenetur atque ullam. Aliquam dolores cupiditate, quod est minima a quidem.</p>
+
+          <div className="portfolio__items">
+            <Project 
+              title="Pepito"
+              info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
+              image="https://picsum.photos/200/300"
+              tecnologies={['Html', 'scss', 'React']}
+              github="/"
+              demo="/"
+            />
+
+            <Project 
+              title="Pepito"
+              info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
+              image="https://picsum.photos/200/300"
+              tecnologies={['Html', 'scss', 'JavaScript']}
+              github="/"
+              demo="/"
+            />
+
+            <Project 
+              title="Pepito"
+              info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
+              image="https://picsum.photos/200/300"
+              tecnologies={['Html', 'scss']}
+              github="/"
+              demo="/"
+            />
+
+            <Project 
+              title="Pepito"
+              info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
+              image="https://picsum.photos/200/300"
+              tecnologies={['Html', 'scss', 'NodeJS']}
+              github="/"
+              demo="/"
+            />
+          </div>
         </div>
       </section>
+
     </>
   )
 }

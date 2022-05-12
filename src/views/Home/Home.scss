@@ -33,4 +33,9 @@
     max-width: 50ch;
     color: $white-color
   }
+
+  &__items {
+    @include flex(flex, row, wrap, flex-start, flex-start);
+    margin-top: 5rem;
+  }
 }
