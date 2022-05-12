@@ -9,7 +9,7 @@ const Project = ({ title, info, image, tecnologies, github, demo }) => {
       <p className="project__info">{info}</p>
 
       <p>
-        {tecnologies && tecnologies.map(tecnologie => <span>#{tecnologie} |</span> )}
+        {tecnologies && tecnologies.map(tecnologie => <span> #{tecnologie} |</span> )}
       </p>
       <Link to={github}>GitHub</Link>
       <Link to={demo}>View project</Link>

@@ -3,14 +3,14 @@ import './Home.scss'
 
 const Home = () => {
   return (
-    <>
+    <main>
       <section className="header">
-
+        <h1 className="header__title">FRONTEND DEVELOPER &<br />WEB DESIGNER.</h1>
       </section>
 
       <section className="about wrapper">
         <div className="about__left">
-          <img src="" alt="about me" />
+          <img src="https://picsum.photos/500/400?grayscale" alt="about me" />
         </div>
         <div className="about__right">
           <h2>Sobre mí</h2>
@@ -18,16 +18,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="portfolio">
+      <section className="portfolio" id="portfolio">
         <div className="wrapper">
           <h2 className="portfolio__title">Portfolio</h2>
-          <p className="portfolio__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus, tenetur atque ullam. Aliquam dolores cupiditate, quod est minima a quidem.</p>
+          <p className="portfolio__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus, tenetur atque ullam. Aliquam dolores cupiditate, quod est minima a quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique.</p>
 
           <div className="portfolio__items">
             <Project 
               title="Pepito"
               info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
-              image="https://picsum.photos/200/300"
+              image="https://picsum.photos/500/300"
               tecnologies={['Html', 'scss', 'React']}
               github="/"
               demo="/"
@@ -36,7 +36,7 @@ const Home = () => {
             <Project 
               title="Pepito"
               info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
-              image="https://picsum.photos/200/300"
+              image="https://picsum.photos/500/300"
               tecnologies={['Html', 'scss', 'JavaScript']}
               github="/"
               demo="/"
@@ -45,7 +45,7 @@ const Home = () => {
             <Project 
               title="Pepito"
               info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
-              image="https://picsum.photos/200/300"
+              image="https://picsum.photos/500/300"
               tecnologies={['Html', 'scss']}
               github="/"
               demo="/"
@@ -54,7 +54,7 @@ const Home = () => {
             <Project 
               title="Pepito"
               info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
-              image="https://picsum.photos/200/300"
+              image="https://picsum.photos/500/300"
               tecnologies={['Html', 'scss', 'NodeJS']}
               github="/"
               demo="/"
@@ -63,7 +63,7 @@ const Home = () => {
         </div>
       </section>
 
-    </>
+    </main>
   )
 }
 

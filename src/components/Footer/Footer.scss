@@ -1,0 +1,14 @@
+@import '/src/assets/stylesheets/general_mixins.scss';
+@import '/src/assets/stylesheets/variables.scss';
+
+.footer {
+  background-color: $main-color;
+  padding: 1rem 0;
+
+  &__copyright {
+    color: $secondary-color;
+    font-size: 1.6rem;
+    text-align: left;
+    padding: 0 15rem;
+  }
+}

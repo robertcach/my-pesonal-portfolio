@@ -1,18 +1,15 @@
 import './App.scss';
+import Footer from './components/Footer/Footer';
 import Navbar from './components/Navbar/Navbar';
-import Project from './components/Project/Project';
 import Home from './views/Home/Home';
 
 function App() {
   return (
-    <div>
-      <header>
-        <Navbar />
-      </header>
-      <main>
-          <Home />
-        </main>
-    </div>
+    <>
+      <Navbar /> 
+      <Home />
+      <Footer />
+    </>
   );
 }
 
