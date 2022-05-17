@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Project.scss';
 
-const Project = ({ title, info, image, tecnologies, github, demo }) => {
+/* const Project = ({ title, info, tecnologies, github, demo }) => {
   return (
     <article className="project">
       <img src={image} alt={title} className="project__image" />
@@ -17,4 +17,4 @@ const Project = ({ title, info, image, tecnologies, github, demo }) => {
   )
 }
 
-export default Project;
+export default Project; */

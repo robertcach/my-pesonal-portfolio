@@ -1,4 +1,4 @@
-import Project from '../../components/Project/Project';
+/* import Project from '../../components/Project/Project'; */
 import './Home.scss'
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
           <p className="portfolio__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus, tenetur atque ullam. Aliquam dolores cupiditate, quod est minima a quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique.</p>
 
           <div className="portfolio__items">
-            <Project 
+            {/* <Project 
               title="Pepito"
               info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
               image="https://picsum.photos/500/300"
@@ -58,7 +58,7 @@ const Home = () => {
               tecnologies={['Html', 'scss', 'NodeJS']}
               github="/"
               demo="/"
-            />
+            /> */}
           </div>
         </div>
       </section>
