@@ -17,7 +17,7 @@ const Project = (props: ProjectProps) => {
       <p className="project__info">{props.info}</p>
 
       <p>
-        {props.tecnologies && props.tecnologies.map(tecnologie => <span key={tecnologie}> #{tecnologie} |</span> )}
+        {props.tecnologies && props.tecnologies.map(tecnologie => <span key={tecnologie} className="project__technology"> #{tecnologie} |</span> )}
       </p>
       <a href={props.github} className="project__link" target="_blank" rel="noopener noreferrer">GitHub</a>
       <a href={props.demo} className="project__link" target="_blank" rel="noopener noreferrer">View project</a>

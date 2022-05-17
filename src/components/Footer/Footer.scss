@@ -2,14 +2,33 @@
 @import '/src/assets/stylesheets/variables.scss';
 
 .footer {
+  @include flex(flex, row, wrap, space-between, center);
   background-color: $main-color;
-  padding: 1rem 0;
+  padding: 0.5rem 15rem;
 
   &__copyright {
     color: $secondary-color;
     font-size: 1.6rem;
     text-align: left;
-    padding: 0 15rem;
+
     margin: 0;
+  }
+
+  &__left {
+    width: 50%;
+  }
+
+  &__right {
+    width: 50%;
+    text-align: right;
+  }
+
+  &__link {
+    margin: 0 0.5rem;
+    color: $secondary-color;
+
+    &:hover {
+      color: $white-color;
+    }
   }
 }

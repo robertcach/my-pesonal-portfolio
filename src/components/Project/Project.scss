@@ -8,11 +8,21 @@
   margin: 5% 1.5%;
 
   &__image {
-    width: 100%;
+    width: 95%;
   }
 
   &__title {
     margin-bottom: 0.5rem;
+/*     font-size: 3.2rem; */
+  }
+
+  &__info {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  &__technology {
+    font-weight: 300;
   }
   
   &__link {
@@ -20,8 +30,9 @@
     text-decoration: none;
     display: inline-block;
     margin-right: 2rem;
-    font-weight: 550;
+/*     font-weight: 550; */
     margin-bottom: 2rem;
+    font-weight: 300;
 
 
     &:after {
