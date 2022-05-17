@@ -1,26 +1,29 @@
 import Project from '../../components/Project/Project';
-/* import { useState } from 'react'; */
+/* import Car from '../../assets/images/MacBook-Pro-16.png'; */
 import './Home.scss'
+const car =  require("../../assets/images/MacBook-Pro-16.png")
+const me = require("../../assets/images/robert-cabrera.png")
 
 const Home = () => {
-/*   const [number, setNumber] = useState<number>(5)
 
-  const changeNumber = () => {
-    setNumber(number + 1)
-  } */
   
   return (
     <main>
       <section className="header">
         <h1 className="header__title">DESARROLLADOR FRONTEND &<br />DISEÑADOR.</h1>
       </section>
-{/* 
-      <p>{number}</p>
-      <button onClick={changeNumber}>Change</button> */}
+
 
       <section className="about wrapper">
         <div className="about__left">
-          <img src="https://picsum.photos/500/400?grayscale" alt="about me" />
+          {/* <img className="about__img" src={me} alt="about me" /> */}
+
+            <p className="about__technology">HTML</p>
+            <p className="about__technology">CSS</p>
+            <p className="about__technology">SASS</p>
+            <p className="about__technology">JavaScript</p>
+            <p className="about__technology">React</p>
+
         </div>
         <div className="about__right">
           <h2 className="about__title">Friki. Seriéfilo.<br />
@@ -41,7 +44,7 @@ const Home = () => {
             <Project 
               title="Oh My plants"
               info="E-Commerce para comprar y vender plantas entre particulares."
-              image="https://picsum.photos/500/300"
+              image={car}
               tecnologies={['MongoDB','ExpressJS', 'React', 'NodeJS', 'JavaScript', 'HTML5', 'SASS']}
               github="https://github.com/robertcach/final-project-web"
               demo="https://ohmyplants.netlify.app/"
@@ -50,7 +53,7 @@ const Home = () => {
             <Project 
               title="Clon de Netflix"
               info="Primo lejano de Netflix hecho con el stack MERN."
-              image="https://picsum.photos/500/300"
+              image={car}
               tecnologies={['MongoDB','ExpressJS', 'React', 'NodeJS', 'JavaScript', 'HTML5', 'SASS']}
               github="https://github.com/robertcach/netflix-react-clone-web"
               demo="https://robertcach-netflix.netlify.app/"
@@ -59,7 +62,7 @@ const Home = () => {
             <Project 
               title="Ironvegan"
               info="Directorio de restaurantes veganos en Madrid."
-              image="https://picsum.photos/500/300"
+              image={car}
               tecnologies={['NodeJS', 'MongoDB', 'ExpressJS', 'Handlebars', 'JavaScript', 'HTML5', 'CSS3']}
               github="https://github.com/robertcach/ironvegan"
               demo="https://veganteam.herokuapp.com/"
@@ -68,7 +71,7 @@ const Home = () => {
             <Project 
               title="Beta Need For Speed "
               info="Juego de carreras inspirado en el mítico videojuego “Need For Speed."
-              image="https://picsum.photos/500/300"
+              image={car}
               tecnologies={['Canvas', 'JavaScript', 'HTML5', 'CSS3']}
               github="https://github.com/robertcach/canvasgame"
               demo="https://robertcach.github.io/canvasgame/"

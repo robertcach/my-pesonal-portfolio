@@ -2,7 +2,7 @@
 @import '/src/assets/stylesheets/variables.scss';
 
 .navbar {
-  @include flex(flex, row, wrap, space-between, center,);
+  @include flex(flex, row, wrap, flex-end, center,);
   width: 100%;
   padding: 0 15rem;
   position: absolute;

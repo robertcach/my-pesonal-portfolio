@@ -5,9 +5,10 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <div className="navbar__figure">
+{/*         <div className="navbar__figure">
           <img src="" alt="logo" className="logo" />
-        </div>
+          <p>Robert Cabrera</p>
+        </div> */}
 
         <div>
           <Link to="/" className="navbar__link">Home</Link>
