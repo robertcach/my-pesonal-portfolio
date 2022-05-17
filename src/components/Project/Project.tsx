@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './Project.scss';
 
 interface ProjectProps {
@@ -20,8 +19,8 @@ const Project = (props: ProjectProps) => {
       <p>
         {props.tecnologies && props.tecnologies.map(tecnologie => <span> #{tecnologie} |</span> )}
       </p>
-      <Link to={props.github}>GitHub</Link>
-      <Link to={props.demo}>View project</Link>
+      <a href={props.github} className="project__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href={props.demo} className="project__link" target="_blank" rel="noopener noreferrer">View project</a>
     </article>
   )
 }

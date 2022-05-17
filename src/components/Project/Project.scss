@@ -7,7 +7,13 @@
   width: 47%;
   margin: 5% 1.5%;
 
-  &__info {
-    margin-bottom: 2rem;
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    color: $white-color;
+    text-decoration: none;
+    margin-right: 1rem;
   }
 }
