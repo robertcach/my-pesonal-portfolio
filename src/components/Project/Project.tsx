@@ -1,20 +1,29 @@
 import { Link } from 'react-router-dom';
 import './Project.scss';
 
-/* const Project = ({ title, info, tecnologies, github, demo }) => {
+interface ProjectProps {
+  title: string;
+  info: string;
+  image: string;
+  tecnologies: string[];
+  github: string;
+  demo: string;
+}
+
+const Project = (props: ProjectProps) => {
   return (
     <article className="project">
-      <img src={image} alt={title} className="project__image" />
-      <h3 className="project__title">{title}</h3>
-      <p className="project__info">{info}</p>
+      <img src={props.image} alt={props.title} className="project__image" />
+      <h3 className="project__title">{props.title}</h3>
+      <p className="project__info">{props.info}</p>
 
       <p>
-        {tecnologies && tecnologies.map(tecnologie => <span> #{tecnologie} |</span> )}
+        {props.tecnologies && props.tecnologies.map(tecnologie => <span> #{tecnologie} |</span> )}
       </p>
-      <Link to={github}>GitHub</Link>
-      <Link to={demo}>View project</Link>
+      <Link to={props.github}>GitHub</Link>
+      <Link to={props.demo}>View project</Link>
     </article>
   )
 }
 
-export default Project; */
+export default Project;

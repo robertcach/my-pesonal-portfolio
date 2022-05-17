@@ -1,12 +1,22 @@
-/* import Project from '../../components/Project/Project'; */
+import Project from '../../components/Project/Project';
+import { useState } from 'react';
 import './Home.scss'
 
 const Home = () => {
+  const [number, setNumber] = useState<number>(5)
+
+  const changeNumber = () => {
+    setNumber(number + 1)
+  }
+  
   return (
     <main>
       <section className="header">
         <h1 className="header__title">FRONTEND DEVELOPER &<br />WEB DESIGNER.</h1>
       </section>
+
+      <p>{number}</p>
+      <button onClick={changeNumber}>Change</button>
 
       <section className="about wrapper">
         <div className="about__left">
@@ -24,7 +34,7 @@ const Home = () => {
           <p className="portfolio__intro">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus, tenetur atque ullam. Aliquam dolores cupiditate, quod est minima a quidem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique.</p>
 
           <div className="portfolio__items">
-            {/* <Project 
+            <Project 
               title="Pepito"
               info="Lorem, ipsum dolor sit amet consectetur adipisicing elit. In quae, illo excepturi cum commodi quisquam similique vel aut temporibus."
               image="https://picsum.photos/500/300"
@@ -58,7 +68,7 @@ const Home = () => {
               tecnologies={['Html', 'scss', 'NodeJS']}
               github="/"
               demo="/"
-            /> */}
+            />
           </div>
         </div>
       </section>
