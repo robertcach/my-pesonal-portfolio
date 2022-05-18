@@ -11,7 +11,9 @@ const Home = () => {
   return (
     <main>
       <section className="header">
-        <h1 className="header__title">DESARROLLADOR FRONTEND &<br />DISEÑADOR.</h1>
+        <div className="wrapper">
+          <h1 className="header__title">DESARROLLADOR FRONTEND &<br />DISEÑADOR.</h1>
+        </div>
       </section>
 
       <section className="about wrapper" id="about">

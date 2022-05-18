@@ -2,13 +2,18 @@
 @import '/src/assets/stylesheets/variables.scss';
 
 .footer {
-  @include flex(flex, row, wrap, space-between, center);
   background-color: $main-color;
-  padding: 0.5rem 15rem;
+  padding: 0.5rem 0;
 
     @media (max-width: 768px) {
       padding: 0.5rem 1rem;
     }
+
+  &__wrapper {
+    @include flex(flex, row, wrap, space-between, center);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
   &__copyright {
     color: $secondary-color;
@@ -42,4 +47,6 @@
       color: $white-color;
     }
   }
+
+
 }
