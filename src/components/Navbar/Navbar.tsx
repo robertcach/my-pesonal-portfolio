@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -10,11 +9,11 @@ const Navbar = () => {
           <p>Robert Cabrera</p>
         </div> */}
 
-        <div>
-          <Link to="/" className="navbar__link">Home</Link>
-          <Link to="/#sobre-mi" className="navbar__link">Sobre mí</Link>
-          <Link to="/#portfolio" className="navbar__link">Portfolio</Link>
-          <Link to="/#contacto" className="navbar__link">Contacto</Link>
+        <div className="navbar__links">
+          <a href="/" className="navbar__link">Home</a>
+          <a href="/#about" className="navbar__link">Sobre mí</a>
+          <a href="/#portfolio" className="navbar__link">Portfolio</a>
+          <a href="/#contacto" className="navbar__link">Contacto</a>
         </div>
       </nav>
     </header>

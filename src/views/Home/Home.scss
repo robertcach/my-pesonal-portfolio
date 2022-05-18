@@ -2,8 +2,8 @@
 @import '/src/assets/stylesheets/variables.scss';
 
 
+/* HEADER */
 .header {
-/*   background-color: $main-color; */
   background: linear-gradient(
       to left,
       $grey-color 0%,
@@ -16,6 +16,17 @@
   align-items: center;
   padding: 0 10rem;
 
+  @media (max-width: 768px) {
+    background: linear-gradient(
+      to left,
+      $main-color 0%,
+      $main-color  50%,
+      $main-color 50%,
+      $main-color 100%
+    );
+    padding: 0 1rem;
+  }
+
   &__title {
     display: flex;
     align-items: center;
@@ -24,22 +35,46 @@
     margin: 0;
     padding: 0;
 
+    @media (max-width: 768px) {
+      font-size: 3.2rem;
+     }
+
     &::before {
       content: '{';
       font-size: 50rem;
       font-weight: 400;
-      margin-top: -7%
+      margin-top: -7%;
+
+      @media (max-width: 768px) {
+        font-size: 13rem;
+        font-weight: 300;
+       }
     }
+
+    
   }
 }
 
 
+
+/* ABOUT */
 .about {
   @include flex(flex, row, wrap, flex-start, center);
   padding: 15rem 0;
 
+  @media (max-width: 768px) {
+    padding: 7rem 1rem;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
   &__left {
     width: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
   }
 
   &__technology {
@@ -50,6 +85,10 @@
     line-height: 0.9;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     color: $white-color;
+
+    @media (max-width: 768px) {
+      font-size: 5rem;
+    }
 
     &:hover {
       color: $main-color;
@@ -63,22 +102,45 @@
 
   &__right {
     width: 50%;
-    text-align: left; 
+    text-align: left;
+    
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
   }
 
   &__title {
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 3rem;
+     }
   }
 
   &__info {
     font-size: 2.3rem;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+     }
+  }
+
+  &__extra {
+    font-size: 1.6rem;
   }
 }
 
 
+
+/* PORTFOLIO */
 .portfolio {
   background-color: $secondary-color;
   padding: 10rem 0;
+
+  @media (max-width: 768px) {
+    padding: 10rem 1rem;
+  }
 
   &__title {
     color: $main-color;

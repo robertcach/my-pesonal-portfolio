@@ -14,7 +14,7 @@ const Home = () => {
         <h1 className="header__title">DESARROLLADOR FRONTEND &<br />DISEÑADOR.</h1>
       </section>
 
-      <section className="about wrapper">
+      <section className="about wrapper" id="about">
         <div className="about__left">
             <p className="about__technology">HTML</p>
             <p className="about__technology">CSS</p>
