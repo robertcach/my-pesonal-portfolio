@@ -39,14 +39,14 @@ const NavbarLinks = (props: NavarProps): JSX.Element  => {
         <a href="/#portfolio" className="navbar__link">Portfolio</a>
       </motion.li>
 
-      <motion.li
+      {/* <motion.li
         initial={animateFrom}
         animate={animateTo}
         transition={{delay: 0.30}}
         className="navbar__li"
         onClick={() => props?.isMobile && props.closeMobileMenu?.()}>
         <a href="/#contacto" className="navbar__link">Contacto</a>
-      </motion.li>
+      </motion.li> */}
     </ul>
   )
 }
