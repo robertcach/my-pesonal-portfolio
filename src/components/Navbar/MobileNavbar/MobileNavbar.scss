@@ -1,0 +1,19 @@
+@import '/src/assets/stylesheets/general_mixins.scss';
+@import '/src/assets/stylesheets/variables.scss';
+
+.mobile-nav {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.navbar {
+
+  &__hamburger {
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+  }
+}

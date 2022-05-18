@@ -1,15 +1,10 @@
 import './App.scss';
 import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/NavbarContainer/NavbarContainer';
 import Home from './views/Home/Home';
 import { Routes, Route } from "react-router";
-import { useState } from 'react';
 
 function App() {
-/*   const[cursorX,setCursorX] =useState()
-  const[cursorY,setCursorY] =useState() */
-
-
 
   return (
     <>

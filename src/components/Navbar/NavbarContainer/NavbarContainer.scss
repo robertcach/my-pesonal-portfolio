@@ -7,6 +7,31 @@
   padding: 1rem 15rem;
   position: absolute;
   top: 0;
+  height: 5rem;
+  
+  @media (max-width: 768px) {
+    padding-right: 3rem;
+  }
+
+
+
+  &__ul {
+    @include flex(flex, row, wrap, flex-end, center);
+    width: 50%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      top: 50px
+    }
+  }
+
+  &__li {
+    padding: 0 1rem;
+    list-style: none;
+  }
 
   &__links {
     width: 30%;
@@ -18,6 +43,13 @@
     text-decoration: none;
     font-size: 1.6rem;
 
+    &:focus {
+      @media (max-width: 768px) {
+        font-weight: 600;
+        font-size: 4rem;
+      }
+    }
+
     &:after {
       content: "";
       display: block;
@@ -25,6 +57,10 @@
       width: 0%;
       background-color: #fdda00;
       transition: 0.5s ease all;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
 
     &:hover::after {

@@ -1,0 +1,8 @@
+@import '/src/assets/stylesheets/general_mixins.scss';
+@import '/src/assets/stylesheets/variables.scss';
+
+.desktop-nav {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
