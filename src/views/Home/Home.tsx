@@ -69,7 +69,7 @@ const Home = () => {
             />
 
             <Project 
-              title="Beta Need For Speed "
+              title="Beta Need For Speed"
               info="Juego de carreras inspirado en el mítico videojuego “Need For Speed."
               image={car}
               tecnologies={['Canvas', 'JavaScript', 'HTML5', 'CSS3']}

@@ -20,7 +20,7 @@ const Project = (props: ProjectProps) => {
         {props.tecnologies && props.tecnologies.map(tecnologie => <span key={tecnologie} className="project__technology"> #{tecnologie} |</span> )}
       </p>
       <a href={props.github} className="project__link" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href={props.demo} className="project__link project__link--demo" target="_blank" rel="noopener noreferrer">View project</a>
+      <a href={props.demo} className={`${props.title === "Beta Need For Speed" ? "project__link project__link--demo" : "project__link"}`} target="_blank" rel="noopener noreferrer">View project</a>
     </article>
   )
 }
