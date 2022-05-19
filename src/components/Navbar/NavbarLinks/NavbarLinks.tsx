@@ -18,7 +18,7 @@ const NavbarLinks = (props: NavarProps): JSX.Element  => {
         transition={{delay: 0.05}}
         className="navbar__li"
         onClick={() => props?.isMobile && props.closeMobileMenu?.()}>
-        <Link to="/" className="navbar__link">Home</Link>
+        <Link to="/" className="navbar__link">Inicio</Link>
       </motion.li>
 
       <motion.li
